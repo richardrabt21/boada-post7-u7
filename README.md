@@ -65,6 +65,8 @@ de error HTML por defecto de Spring Boot.
 - Persistencia en memoria (Map en TareaService) en lugar de JPA/Hibernate:
   la persistencia real se introduce formalmente en la Unidad 8.
 
+- Spring Boot 4 (Jackson 3): se configura `spring.jackson.deserialization.fail-on-null-for-primitives=false` para que un JSON sin el campo primitivo `completada` (como el de los ejemplos del enunciado) se acepte con el valor por defecto `false` en lugar de responder 400.
+
 ## Cómo compilar y ejecutar
 
 1. Clonar el repositorio: `git clone https://github.com/richardrabt21/boada-post7-u7.git`
